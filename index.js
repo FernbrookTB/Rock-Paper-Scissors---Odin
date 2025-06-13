@@ -56,8 +56,21 @@ function handlePlayerChoice (playerSelection) {
             finalMessage = 'Its a tie!';
         }
         document.getElementById('result').textContent += `\n${finalMessage}`;
+        document.getElementById('playAgain').style.display = 'flex';
     }
 }
+
+function resetGame() {
+    playerScore = 0;
+    computerScore = 0;
+    roundCount = 0;
+    document.getElementById('playerScore').textContent = 'You: 0';
+    document.getElementById('computerScore').textContent = 'Computer: 0';
+    document.getElementById('result').textContent = 'Lets play!';
+    document.getElementById('playAgain').style.display = 'none';
+}
+
+
 
 document.getElementById('rock').addEventListener('click', () => {
     handlePlayerChoice('rock')
@@ -71,7 +84,9 @@ document.getElementById('scissors').addEventListener('click', () => {
     handlePlayerChoice('scissors')
 });
 
+document.getElementById('playAgain').addEventListener('click', resetGame);
+
 document.getElementById('start').addEventListener('click', () => {
     document.getElementById('start').style.display = 'none';
     document.getElementById('card-container').style.display = 'flex';
-})
+});
