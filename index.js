@@ -71,3 +71,7 @@ document.getElementById('scissors').addEventListener('click', () => {
     handlePlayerChoice('scissors')
 });
 
+document.getElementById('start').addEventListener('click', () => {
+    document.getElementById('start').style.display = 'none';
+    document.getElementById('card-container').style.display = 'flex';
+})
