@@ -7,6 +7,7 @@
 body {
     height: 100vh;
     width: 100%;
+    background-color: #011526;
 }
 
 header {
@@ -15,6 +16,7 @@ header {
     align-items: flex-end;
     height: 200px;
     width: 100%;
+    color: #A65F21;
     
 }
 
@@ -41,12 +43,20 @@ section {
     height: 50%;
     width: 50%;
     border-radius: 8px;
+    background-color: #A65F21;
+    border: 1px;
+}
+
+#card-container:hover {
+    box-shadow: 0 0 10px #F2B872, 0 0 15px #F2B872, 0 0 20px #F2B872;
+    transition: 0.5s ease-in-out;
 }
 
 #score {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    color: #F2B872;
 
 }
 
@@ -61,5 +71,15 @@ button {
     padding:20px;
     width: 100px;
     border-radius: 8px;
-    
+    background-color: #011526;
+    color: #F2B872;
+}
+
+button:hover {
+   box-shadow: 0 0 10px #F2B872, 0 0 15px #F2B872, 0 0 20px #F2B872;
+    transition: 0.3s ease-in-out; 
+}
+
+#result{
+    color: #F2B872;
 }

@@ -89,4 +89,5 @@ document.getElementById('playAgain').addEventListener('click', resetGame);
 document.getElementById('start').addEventListener('click', () => {
     document.getElementById('start').style.display = 'none';
     document.getElementById('card-container').style.display = 'flex';
+    document.getElementById('result').textContent = 'Lets play!';
 });
